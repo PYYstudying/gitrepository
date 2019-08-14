@@ -1,15 +1,12 @@
-package com.springboot.demo.annotation;
+package com.example.springwebmvc.annotation;
 
 import org.springframework.stereotype.Component;
 
 import java.lang.annotation.*;
 
-@Target({ElementType.TYPE})
+@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Component
-public @interface FirstLevelAnnotation {
-
-    String value() default "";
-
+public @interface CustomAnnotation {
 }

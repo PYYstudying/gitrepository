@@ -1,0 +1,12 @@
+org.springframework.context.ApplicationContextInitializer=\
+com.springboot.springapplication.context.AfterApplicationContextInitializer,\
+com.springboot.springapplication.context.BeforeApplicationContextInitializer
+
+#listener
+org.springframework.context.ApplicationListener=\
+com.springboot.springapplication.listener.CustomApplicationEventListener,\
+com.springboot.springapplication.listener.CustomConfigFileApplicationListener
+
+#runListener
+org.springframework.boot.SpringApplicationRunListener=\
+com.springboot.springapplication.run.CustomSpringApplicationRunListener
